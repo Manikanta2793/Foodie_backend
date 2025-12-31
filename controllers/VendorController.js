@@ -20,7 +20,7 @@ const vendorRegister = async(req,res)=>{
 
         await newVendor.save();
 
-        res.status(200).json('Vendor registered successfully')
+        res.status(200).json({data:newVendor})
         console.log('Vendor registered successfully');
 
     }catch(error){
